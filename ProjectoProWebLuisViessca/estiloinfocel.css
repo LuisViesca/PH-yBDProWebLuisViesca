@@ -1,0 +1,126 @@
+body{
+  background-color: white;
+  font-family: sans-serif;
+}
+body h1
+{
+    color:darkblue;
+    text-align: center;
+    font-size: 80px;
+   
+}
+body h4
+{
+    color:darkblue;
+    text-align: center;
+    font-size: 40px;
+}
+body h6
+{
+    color:black;
+    text-align: center;
+    font-size: 15px;
+}
+.container{
+  margin: auto;
+  background-color: white;
+  width: 800px;
+  padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menuu{
+  text-align: center;
+  margin: 20px;
+}
+
+.menuu li{
+  display: inline-block;
+  text-align: center;
+}
+.mennu li p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.menuu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+#menu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu #item
+{
+    float: left;
+    justify-content: space-between;
+}
+#menu #item a
+{
+    background-color:white;
+    color: black;
+    padding: 15px 108px;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+}
+#menu #desple 
+{
+display: none;    
+position: absolute;
+}
+#menu #item a:hover
+{
+    background-color:gainsboro;
+    color:white;
+}
+#menu #item:hover #desple
+{
+    display: inline-block;
+}
